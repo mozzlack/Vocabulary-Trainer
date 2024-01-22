@@ -1,6 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Vocab testVocab = new Vocab("tür", "door");
+        VocabSet set = new VocabSet("english", "german");
+        Vocab a = new Vocab("door", "Tür");
+        Vocab b = new Vocab("door", "Tür");
+        set.addVocab(new Vocab("door", "Tür"));
+        set.addVocab(new Vocab("house", "Haus"));
+        System.out.println(set);
+        System.out.println();
+
+        VocabFrame frame = new VocabFrame();
+        frame.setVisible(true);
+
+
 
     }
 }
